@@ -1,5 +1,7 @@
 body {
   background-color: #240046;
+
+  background: linear-gradient(180deg, #240046 0%, #000000 100%);
 }
 
 h1 {
@@ -25,7 +27,7 @@ p {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #310957;
-  overflow: hidden;
+  overflow: hidden;;
 }
 
 /* Style the links inside the navigation bar */
@@ -51,17 +53,18 @@ p {
 }
 
 .textbox {
-    background-color: #3c096c;
+    background-color: #3c096c6d;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+  text-align: center;
 
 }
 
 .reviewbox {
-    background-color: #3c096c;
+    background-color: #3c096c6d;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 30px;
@@ -74,5 +77,4 @@ p {
     color: white;
   font-family: Courier New, monospace;
   font-size: 20px;
-  text-align: left;
 } 
