@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sulphan.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="walk0000" x="114" y="0" width="107" height="319" frameX="-67" frameY="-26" frameWidth="273" frameHeight="382"/>
+	<SubTexture name="walk0001" x="221" y="0" width="102" height="319" frameX="-74" frameY="-26" frameWidth="273" frameHeight="382"/>
+	<SubTexture name="walk0002" x="323" y="0" width="96" height="319" frameX="-78" frameY="-26" frameWidth="273" frameHeight="382"/>
+	<SubTexture name="walk0003" x="0" y="0" width="114" height="319" frameX="-67" frameY="-26" frameWidth="273" frameHeight="382"/>
+	<SubTexture name="idle0000" x="323" y="0" width="96" height="319" frameX="-78" frameY="-26" frameWidth="273" frameHeight="382"/>
+</TextureAtlas>
