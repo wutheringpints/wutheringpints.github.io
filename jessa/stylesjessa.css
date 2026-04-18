@@ -76,6 +76,19 @@ p {
   font-size: 20px;
 } 
 
+.jessabox p {
+    color: rgb(31, 0, 183);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+.sharkbox p {
+    color: rgb(128, 0, 255);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+
 .reviewbox a {
     color: rgb(0, 55, 255);
   font-family: Courier New, monospace;
