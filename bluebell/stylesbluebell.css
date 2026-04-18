@@ -1,31 +1,31 @@
 body {
-  background-color: #240046;
+  background-color: #0024c3;
 
-  background: linear-gradient(180deg, #240046 0%, #000000 100%);
+  background: linear-gradient(180deg, #002fb1 0%, #7dacffb8 100%);
 }
 
 h1 {
   color: white;
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
 
   text-align: center;
 }
 
 h2 {
   color: white;
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
 
   text-align: left;
 }
 
 p {
   color: white;
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
   font-size: 20px;
 }
 
 .topnav {
-  background-color: #1b0749;
+  background-color: #5059ff;
   overflow: hidden;;
 }
 
@@ -35,23 +35,23 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
 
   font-size: 17px;
 }
 
 .topnav a:hover {
   background-color: #ddd;
-  color: #14075e;
+  color: #ffffff;
 }
 
 .topnav a.active {
-  background-color: #7e04aa;
+  background-color: #0a04aa;
   color: white;
 }
 
 .textbox {
-    background-color: #3c096c6d;
+    background-color: #09156c00;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
@@ -62,7 +62,7 @@ p {
 }
 
 .reviewbox {
-    background-color: #3c096c6d;
+    background-color: #09256c00;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
@@ -73,27 +73,27 @@ p {
 
 .reviewbox p {
     color: white;
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
   font-size: 20px;
 } 
 
 .reviewbox h4 {
     color: white;
 
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
   font-size: 10px;
 } 
 
 .textbox h3 {
     color: white;
 
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
   font-size: 15px;
 } 
 
 .textbox h4 {
     color: white;
 
-  font-family: Courier New, monospace;
+  font-family: Garamond, serif;
   font-size: 10px;
 } 

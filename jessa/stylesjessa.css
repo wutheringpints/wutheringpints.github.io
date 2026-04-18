@@ -1,7 +1,6 @@
 body {
-  background-color: #240046;
+  background-color: #000000;
 
-  background: linear-gradient(180deg, #240046 0%, #000000 100%);
 }
 
 h1 {
@@ -25,13 +24,13 @@ p {
 }
 
 .topnav {
-  background-color: #1b0749;
+  background-color: #000000;
   overflow: hidden;;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,16 +41,16 @@ p {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: #14075e;
+  color: #2600ff;
 }
 
 .topnav a.active {
-  background-color: #7e04aa;
+  background-color: #0800ff;
   color: white;
 }
 
 .textbox {
-    background-color: #3c096c6d;
+    background-color: #0000006d;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
@@ -62,7 +61,7 @@ p {
 }
 
 .reviewbox {
-    background-color: #3c096c6d;
+    background-color: #0000006d;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
@@ -76,6 +75,13 @@ p {
   font-family: Courier New, monospace;
   font-size: 20px;
 } 
+
+.reviewbox a {
+    color: rgb(0, 55, 255);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
 
 .reviewbox h4 {
     color: white;
