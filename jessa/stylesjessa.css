@@ -70,6 +70,16 @@ p {
 
 }
 
+.jessabox {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+
+}
+
+
 .reviewbox p {
     color: white;
   font-family: Courier New, monospace;
@@ -77,7 +87,7 @@ p {
 } 
 
 .jessabox p {
-    color: rgb(69, 65, 152);
+    color: rgb(108, 101, 226);
   font-family: Courier New, monospace;
   font-size: 20px;
 } 
