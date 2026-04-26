@@ -118,6 +118,13 @@ p {
   font-size: 20px;
 } 
 
+.reviewbox h2 {
+    color: white;
+
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
 .textbox h3 {
     color: white;
 
