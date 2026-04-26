@@ -1,0 +1,100 @@
+<head>
+   <link rel="stylesheet" href="/jessa/stylesjessa.css">
+    <title>Eclosion Of A Butterfly</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/menu">Menu</a>
+  <a href="/news">News</a>
+  <a class="active" href="">???</a>
+
+</div>
+<br>
+
+<div class="reviewbox">
+<h2>PART 1: WHAT IS YOUR NAME?</h2>
+<h3>THE LADY: CALL OUT >></h3>
+
+</div>
+
+<div class="jessabox">
+<p>T.L: "HELLOOOOO! ANYBODY HERE??"</p>
+<p>T.L: "I'M HERE ON FIXER BUSINESS LUV' SO IF WE COULD MAKE THIS QUICK I'D BE DELIGHTED!"</p>
+</div>
+
+<div class="reviewbox">
+<p>The Lady cried out into the darkness, waiting for a response. Even after waiting for a few moments she hadn’t heard anything. So she stood there and looked around at the musty room she found herself in.</p>
+</div>
+
+<div class="jessabox">
+<p>T.L: “Tough crowd huh.. Hmmph! Whatever, I suppose I can continue to look aro–”
+</p>
+</div>
+
+<br>
+
+<div class="reviewbox">
+<p>A loud rumbling came from upstairs. It seems that The Lady was not wrong whatsoever.
+</p>
+<br>
+
+<p>The speakers around her suddenly kick up, booming out some dubstep playlist.. Not exactly to The Ladies taste, she prefers pop music.
+</p>
+
+<br>
+
+<div class="jessabox">
+<p>T.L: “Hmm.. Just playing this shotty music wont scare me luv! Just get out here and fight me already! I wanna play!~”
+</p>
+
+<p>T.L: “Hmm.. Just playing this shotty music wont scare me luv! Just get out here and fight me already! I wanna play!~”
+</p>
+<p>???: “Well, Ya found me. I’m here.”</p>
+</div>
+
+
+
+<div class="textBox">
+<h4>Page 3, 26/04/2026</h4>
+</div>
+
+<script>
+  const characters = {
+    'T.L': {
+      icon: '/images/jessa/jessaicon.png',
+      color: 'rgb(108, 101, 226)'
+    },
+    '???': {
+      icon: '/images/shark/nonameicon.png',
+      color: 'rgb(255, 60, 255)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    const icon = document.createElement('img');
+    icon.src = char.icon;
+    icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:12px;';
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
+
+
