@@ -22,22 +22,36 @@
 
         <!-- Set the background colour of the document -->
         <style>
-            body {
-                background: #0;
+            html, body {
+                background: #000000;
                 color: #cccccc;
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
             }
 
             canvas {
                 image-rendering: optimizeSpeed;
+                image-rendering: pixelated;
                 -webkit-interpolation-mode: nearest-neighbor;
                 -ms-touch-action: none;
                 touch-action: none;
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+                /* Scale canvas to fit viewport while keeping aspect ratio */
+                max-width: 100vw;
+                max-height: 100vh;
+                width: auto !important;
+                height: auto !important;
+                aspect-ratio: 970 / 652;
+                object-fit: contain;
             }
             :-webkit-full-screen #canvas {
                 width: 100%;
@@ -53,6 +67,11 @@
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
             }
             div.gm4html5_login {
                 padding: 20px;
@@ -117,7 +136,27 @@
         <!-- Builtin injector for injecting runner path -->
         
 
-        <script>window.onload = GameMaker_Init;</script>
+        <!-- Mobile/responsive scaling for GameMaker canvas -->
+        <script>
+            const GAME_W = 970;
+            const GAME_H = 652;
+
+            function scaleCanvas() {
+                const canvas = document.getElementById('canvas');
+                if (!canvas) return;
+                const scale = Math.min(window.innerWidth / GAME_W, window.innerHeight / GAME_H);
+                canvas.style.width  = Math.floor(GAME_W * scale) + 'px';
+                canvas.style.height = Math.floor(GAME_H * scale) + 'px';
+            }
+
+            window.addEventListener('resize', scaleCanvas);
+
+            // Let GM initialise first, then scale
+            window.onload = function() {
+                if (typeof GameMaker_Init === 'function') GameMaker_Init();
+                setTimeout(scaleCanvas, 100);
+            };
+        </script>
 
         <!-- Builtin injector for injecting google analytics code -->
         
