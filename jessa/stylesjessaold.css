@@ -1,7 +1,6 @@
 body {
   background-color: #000000;
 
-  background: linear-gradient(180deg, #000000 0%, #323232 100%);
 }
 
 h1 {
@@ -31,7 +30,7 @@ p {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,16 +41,15 @@ p {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: #000000;
+  color: #2600ff;
 }
 
 .topnav a.active {
-  background-color: #7e04aa;
+  background-color: #0800ff;
   color: white;
 }
 
 .textbox {
-    background-color: #00000000;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
@@ -62,14 +60,23 @@ p {
 }
 
 .reviewbox {
-    background-color: #0000006d;
   overflow: hidden;
   padding-top: 10px;
   padding-right: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   padding-left: 50px;
 
 }
+
+.jessabox {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+
+}
+
 
 .reviewbox p {
     color: white;
@@ -77,11 +84,45 @@ p {
   font-size: 20px;
 } 
 
+.jessabox p {
+    color: rgb(108, 101, 226);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+.sharkbox p {
+    color: rgb(128, 0, 255);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+
+.reviewbox a {
+    color: rgb(0, 55, 255);
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+
 .reviewbox h4 {
     color: white;
 
   font-family: Courier New, monospace;
   font-size: 10px;
+} 
+
+.textbox h2 {
+    color: white;
+
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+.reviewbox h3 {
+    color: white;
+
+  font-family: Courier New, monospace;
+  font-size: 20px;
 } 
 
 .textbox h3 {
@@ -96,4 +137,39 @@ p {
 
   font-family: Courier New, monospace;
   font-size: 10px;
+} 
+
+.imgbox {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imgbox img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.imgbox h3 {
+    color: white;
+  text-align: center;
+
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+.imgbox p {
+    color: white;
+  text-align: center;
+
+  font-family: Courier New, monospace;
+  font-size: 20px;
+} 
+
+.imgbox h2 {
+    color: white;
+  text-align: center;
+  font-family: Courier New, monospace;
+  font-size: 25px;
 } 
