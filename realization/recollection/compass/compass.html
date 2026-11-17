@@ -1,0 +1,83 @@
+<head>
+   <link rel="stylesheet" href="/jessa/stylesjessa.css">
+    <title>The Unclashable Blade</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="/">???</a>
+  <a class="active" href="/realization">???</a>
+  <a href="">???</a>
+
+</div>
+<br>
+
+<div class="reviewbox">
+<h2>??? - Moments from a conversation.</h2>
+
+</div>
+
+<div class="jessabox">
+<p>???: It's a difficult thing wanting revenge, Theres always gonna be someone or something out there that gnaws away at your person, trying to stop you from living your life to the fullest, to stop you from doing the things you care about, saving the people you care about.
+ </p> 
+  <p>???: ...
+ </p>
+ <p>???: Once, I had people like that too, y'know? Ehh-.. Not to say you aren't like that to me, Kělè. But I think that actually- actually does sort of "pronounce" my point, if you will.
+</p>
+<p>???: I think thats the right word atleast.. Hm. Look, the point is.. You two want revenge, but it's not like you're some backstreets thugs who run around whick-whacking peoples heads off because you're mad at them, and thats good! because I fear that LIKE those guys, you'll get killed going at it, and UNLIKE those guys, there won't be anyone else getting ready to come and do the same in your name.</p>
+<p>???: ...</p>
+<p>???: ....No, no I don't think it's a good idea for me to help you.</p>
+<p>???: Im still seeking out revenge myself, afterall. that day she came to me.. Even if I remain myself, I'm still responsible for what happens to other people, and if I help you.. I'll become responsible for you too. Even if you say I won't.</p>
+<p>???:I'm sorry, but until I find my own direction, I can't help direct you. And the compass.. Won't be seen again.</p>
+
+
+</div>
+
+
+
+<div class="textBox">
+<h4>???, ??/??/??</h4>
+</div>
+
+<script>
+  const characters = {
+    'Yolisa': {
+      icon: 'yolisaicon.png',
+      color: 'rgb(118, 83, 176)'
+    },
+    'Yang Dingliu': {
+      icon: 'yangicon.png',
+      color: 'rgb(122, 151, 255)'
+    },
+    '???': {
+      icon: 'luopanicon.png',
+      color: 'rgb(125, 60, 95)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    const icon = document.createElement('img');
+    icon.src = char.icon;
+    icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:12px;';
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
+
+
