@@ -1,0 +1,107 @@
+<head>
+   <link rel="stylesheet" href="/realization/stylesjessa.css">
+    <title>The Unclashable Blade</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="/">???</a>
+  <a class="active" href="/realization">???</a>
+  <a href="">???</a>
+
+</div>
+<br>
+
+<div class="reviewbox">
+<h2>???</h2>
+
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “Well, this’ll be the last time we come here for a while.. Or at all, Missy. Do you have everything you need?”
+</p>
+
+<p>Yolisa: “Swear down you’re always cleaning that thing, lad.. Yeah, I’m ready.”</p>
+</div>
+
+<div class="reviewbox">
+<p>Yolisa fully turned to Yang, re-adjusting her coat. She had decided to wear the large black coat Yang gave to her as a “sorry” gift when arriving in H corp. She felt cold. Though not because of the temperature, all things considered it was actually quite a warm day but due to the uncertainty of what would transpire within the next few hours or days, she felt a chill down her back.</p>
+<p>She had been quite “chill” about the entire ordeal until now. Maybe it was “getting serious” that got to her, but commiting to something after so long left her a bit miffed.</p>
+<p>Yang sighed a little, pulling his sword close to his chest, seemingly disappointed.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “I did tell you cleaning your blade is important, didn’t I?”</p>
+
+<p>Yolisa: “-Oh calm down mate, wouldn’t it just get bloody anyways?”</p>
+
+<p>Yang Dingliu: “Yeah, but that's not the-.... Huff. Whatever Yolisa, you do you.”</p>
+
+<p>Yolisa: “Right, sorry. "THE PRINCIPLE" or whatever you go on about.”</p>
+</div>
+
+<div class="reviewbox">
+<p>Yang would nod, and move his sword into a one-handed grip with his right hand. Unlike Yolisa, he was aware of the annoyance that would be finding their way to their objective in the first place. He was going to need more than just her help. 
+
+He wasn’t without a plan, though. 
+</p>
+</div>
+<div class="jessabox">
+
+<p>Yang Dingliu: “..So… This first part’ll probably be difficult. Finding her after a restructuring day is always a hassle. ..For someone so obsessed with direction, she's really bad at keeping in check with that sort of thing.
+Come on Yolisa, once we find her, we'll be able to know exactly where to go.”
+</p>
+
+</div>
+
+<div class="reviewbox">
+<p>And off they went, searching for the compass.</p>
+</div>
+
+
+<div class="textBox">
+<h4>???, ??/??/??</h4>
+</div>
+
+<script>
+  const characters = {
+    'Yolisa': {
+      icon: '/images/jessa/yolisaicon.png',
+      color: 'rgb(118, 83, 176)'
+    },
+    'Yang Dingliu': {
+      icon: '/images/jessa/yangicon.png',
+      color: 'rgb(122, 151, 255)'
+    },
+    '???': {
+      icon: '/images/jessa/luopanicon.png',
+      color: 'rgb(125, 60, 95)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    const icon = document.createElement('img');
+    icon.src = char.icon;
+    icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:12px;';
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
+
+
