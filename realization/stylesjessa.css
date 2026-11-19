@@ -1,31 +1,35 @@
-body {
-  background-color: #000000;
+:root {
+  --bg: #0b0b10;
+  --text: #e8e8ec;
+  --link: #7f9bff;
+}
 
+body {
+  background-color: var(--bg);
 }
 
 h1 {
-  color: white;
-  font-family: Courier New, monospace;
-
+  color: var(--text);
+  font-family: "Courier New", monospace;
   text-align: center;
 }
 
 h2 {
-  color: white;
-  font-family: Courier New, monospace;
-
+  color: var(--text);
+  font-family: "Courier New", monospace;
   text-align: left;
 }
 
 p {
-  color: white;
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 20px;
+  line-height: 1.7;
 }
 
 .topnav {
-  background-color: #000000;
-  overflow: hidden;;
+  background-color: var(--bg);
+  overflow: hidden;
 }
 
 .topnav a {
@@ -34,8 +38,7 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Courier New, monospace;
-
+  font-family: "Courier New", monospace;
   font-size: 17px;
 }
 
@@ -51,98 +54,99 @@ p {
 
 .textbox {
   overflow: hidden;
-  padding-top: 10px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
+  padding: 10px 50px 50px 50px;
   text-align: center;
+}
 
+.reviewbox,
+.jessabox {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .reviewbox {
-  overflow: hidden;
   padding-top: 10px;
-  padding-right: 50px;
   padding-bottom: 15px;
-  padding-left: 50px;
-
 }
 
 .jessabox {
-  overflow: hidden;
   padding-top: 10px;
-  padding-right: 50px;
   padding-bottom: 5px;
-  padding-left: 50px;
-
 }
 
-
 .reviewbox p {
-    color: white;
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+  line-height: 1.7;
+  margin: 0 0 1em;
+}
 
 .jessabox p {
-    color: rgb(108, 101, 226);
-  font-family: Courier New, monospace;
+  color: rgb(160, 150, 245);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+  line-height: 1.7;
+  margin: 0 0 1em;
+}
+/*unused4now cuz i dont NEED IT!! */
+.jessabox img[src*=""] {
+  background: #d8d8d8;
+  border-radius: 50%;
+  padding: 2px;
+}
 
 .sharkbox p {
-    color: rgb(128, 0, 255);
-  font-family: Courier New, monospace;
+  color: rgb(185, 120, 255);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
-
+  line-height: 1.7;
+}
 
 .reviewbox a {
-    color: rgb(0, 55, 255);
-  font-family: Courier New, monospace;
+  color: var(--link);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
-
+}
 
 .reviewbox h4 {
-    color: white;
-
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 10px;
-} 
+}
 
 .textbox h2 {
-    color: white;
-
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+}
 
 .reviewbox h3 {
-    color: white;
-
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+}
 
 .textbox h3 {
-    color: white;
-
-  font-family: Courier New, monospace;
+  color: var(--text);
+  font-family: "Courier New", monospace;
   font-size: 15px;
-} 
+}
 
 .textbox h4 {
-    color: white;
-
-  font-family: Courier New, monospace;
-  font-size: 10px;
-} 
+  color: var(--text);
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
 
 .imgbox {
   justify-content: center;
   align-items: center;
-
 }
 
 .imgbox img {
@@ -152,24 +156,22 @@ p {
 }
 
 .imgbox h3 {
-    color: white;
+  color: var(--text);
   text-align: center;
-
-  font-family: Courier New, monospace;
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+}
 
 .imgbox p {
-    color: white;
+  color: var(--text);
   text-align: center;
-
-  font-family: Courier New, monospace;
+  font-family: "Courier New", monospace;
   font-size: 20px;
-} 
+}
 
 .imgbox h2 {
-    color: white;
+  color: var(--text);
   text-align: center;
-  font-family: Courier New, monospace;
+  font-family: "Courier New", monospace;
   font-size: 25px;
-} 
+}
