@@ -155,27 +155,38 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+ 
 .imgbox img {
   display: block;
   margin: auto;
   width: 50%;
 }
-
+ 
+.readingbox .imgbox {
+  padding: 10px 50px 15px 50px;
+  box-sizing: border-box;
+}
+ 
+.readingbox .imgbox img {
+  width: 85%;
+  max-width: 100%;
+  height: auto;
+}
+ 
 .imgbox h3 {
   color: var(--text);
   text-align: center;
   font-family: "Courier New", monospace;
   font-size: 20px;
 }
-
+ 
 .imgbox p {
   color: var(--text);
   text-align: center;
   font-family: "Courier New", monospace;
   font-size: 20px;
 }
-
+ 
 .imgbox h2 {
   color: var(--text);
   text-align: center;
