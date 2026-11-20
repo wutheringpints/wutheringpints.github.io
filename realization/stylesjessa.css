@@ -1,11 +1,13 @@
 :root {
-  --bg: #0b0b10;
+  --bg: #000000;
   --text: #e8e8ec;
   --link: #7f9bff;
+  --panel-bg: rgb(0, 0, 0);
 }
 
 body {
   background-color: var(--bg);
+
 }
 
 h1 {
@@ -58,13 +60,18 @@ p {
   text-align: center;
 }
 
+.readingbox {
+  box-sizing: border-box;
+  max-width: 950px;
+  margin: 20px auto 40px;
+  padding: 20px 0;
+  background: var(--panel-bg);
+}
+
 .reviewbox,
 .jessabox {
   box-sizing: border-box;
   overflow: hidden;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -94,7 +101,7 @@ p {
   line-height: 1.7;
   margin: 0 0 1em;
 }
-/*unused4now cuz i dont NEED IT!! */
+
 .jessabox img[src*=""] {
   background: #d8d8d8;
   border-radius: 50%;
