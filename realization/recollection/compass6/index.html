@@ -1,0 +1,158 @@
+<head>
+   <link rel="stylesheet" href="/realization/stylesjessa.css">
+    <title>The Unclashable Blade</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="/">???</a>
+  <a class="active" href="/realization">???</a>
+  <a href="">???</a>
+
+</div>
+<br>
+
+<div class="readingbox">
+
+<div class="reviewbox">
+<p>Yang catches a glimpse of something through a gap in a wall. Whatever he saw must’ve made him concerned, as he grabbed Yolisa and began pulling her into hiding, throwing her immensely off guard.</p>
+</div>
+
+<div class="jessabox">
+<p>Yolisa: “Oi? Mate?! What the bloody hell d’you think yer’ doing?!”</p>
+
+<p>Yang Dingliu: “Shut up-!”</p>
+</div>
+
+<div class="reviewbox">
+<p>He shoved Yolisa behind a wall, ignoring her cursing due to the violence of the push. He peered out behind the wall and looked out to the path he had just dragged Yolisa down.</p>
+</div>
+
+<div class="jessabox">
+<p>Yolisa: “What the fuck do you think your doing lad? I swear down I’ll”</p>
+
+<p>Yang Dingliu: “Listen to me. Yolisa, you shut up while I’m–”</p>
+
+<p>Yolisa: “Oh, okay, I see how it is. Right. Whatever.”</p>
+</div>
+
+<div class="reviewbox">
+<p>Yolisa crosses her arms around her sword, seeming agitated by the attitude he was putting towards her.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “I’m just- I was just- ghhrr..!”</p>
+</div>
+
+<div class="reviewbox">
+<p>He gritted his teeth a little.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “Can’t you hear there's some-”</p>
+
+<p>Yolisa: “-Look lad, I’m not sitting ere’ to get bossed around by you so you can "protect" me. Happened enough back in K corp. Sort yerself out.”</p>
+
+<p>Yang Dingliu: “...”</p>
+</div>
+
+<div class="reviewbox">
+<p>Yang relaxed himself, sighing as he looked at Yolisa, still hugging her sword. He frowned, understanding the tone of Yolisa's words. Despite that, he felt the possible severity was too important to be getting "mad". Who was she to tell him what to do in such a situation? He kept peering around the corner, choosing to try and keep himself in the right.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “....”</p>
+
+<p>Yolisa: “...”</p>
+</div>
+
+<div class="reviewbox">
+<p>She turned away from him, choosing to keep quiet. Instead opting to repeat the moment prior again and again in her head, wagering the why and how of it. She tried to be more observant nowadays, afterall. Perhaps she really didn’t understand the severity of the situation, even still. There's no reason to be that way, she thought.</p>
+<p>The sound kept getting louder, the sound of people shuffling through the streets, talking to each other. Leaning in closer, Yang tried to make out a conversation.</p>
+</div>
+
+<div class="jessabox">
+<p data-char="unknownA">???: “...We’ve searched the entire area for resources now. There's barely been anything worth our time down here, how depressing..”</p>
+
+<p data-char="unknownB">???: “Haaah~ You’re much too closed minded, how will you pass the next exam if your work reflects your lack of creativity so closely? I found some wonderful hides for myself, and I’m sure "She" will love what I’ve gotten for her too~..”</p>
+
+<p data-char="unknownA">???: “You bitch! My work is top notch, the only reason I’ve found nothing of note down here is because it’s all below my work. A slob like you wouldn’t know, would you?”</p>
+
+<p data-char="unknownB">???: “Hmm~ Don’t get so angry now, how are you going to work with a tense-tense mind like that, my friend?~ Such a shame..”</p>
+
+<p data-char="unknownA">???: “Shut it. Lets just keep looking.”</p>
+</div>
+
+<div class="reviewbox">
+<p>The conversation devolved into back-and-forth squabbling after that, as more and more voices seemed to join in, crowding into a giant garble of speech as it passed through the streets.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “...No chance, surely..? Why would they be.-.”</p>
+</div>
+
+</div>
+
+<div class="textBox">
+<h4>???, ??/??/??</h4>
+</div>
+
+<script>
+  const characters = {
+    'Yolisa': {
+      icon: '/images/jessa/yolisaicon.png',
+      color: 'rgb(176, 148, 232)'
+    },
+    'Yang Dingliu': {
+      icon: '/images/jessa/yangicon.png',
+      color: 'rgb(140, 168, 255)'
+    },
+    '???': {
+      icon: '/images/jessa/luopanicon.png',
+      color: 'rgb(226, 138, 186)'
+    },
+
+    'unknownA': {
+      icon: null,
+      color: 'rgb(255, 176, 120)'
+    },
+    'unknownB': {
+      icon: null,
+      color: 'rgb(140, 224, 170)'
+    },
+    'Passerby': {
+      icon: null,
+      color: 'rgb(190, 190, 190)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = p.dataset.char || Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    let icon;
+    if (char.icon) {
+      icon = document.createElement('img');
+      icon.src = char.icon;
+      icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:12px;';
+    } else {
+      icon = document.createElement('div');
+      icon.style.cssText = 'width:36px; height:36px; flex-shrink:0;';
+    }
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
