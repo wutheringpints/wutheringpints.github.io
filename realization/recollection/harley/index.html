@@ -1,0 +1,99 @@
+<head>
+   <link rel="stylesheet" href="/realization/stylesjessa.css">
+    <title>The Unclashable Blade</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<style>
+  .topnav a.active { background-color: rgb(255, 175, 0);}
+</style>
+
+<body>
+
+<div class="topnav">
+  <a href="/">???</a>
+  <a class="active" href="/realization">???</a>
+  <a href="">???</a>
+
+</div>
+<br>
+
+<div class="readingbox">
+
+
+<div class="imgbox">
+<img src="/images/jessa/compass3.png" alt="A strange woman wearing an even stranger cloack emerges from an alleyway, eeyikes!">
+</div>
+
+<audio controls src="harley.mp3">
+</audio>
+
+</div>
+
+<div class="textBox">
+<h4>???, ??/??/??</h4>
+</div>
+
+<script>
+  const characters = {
+    'Yolisa': {
+      icon: '/images/jessa/yolisaicon.png',
+      color: 'rgb(176, 148, 232)'
+    },
+    'Yang Dingliu': {
+      icon: '/images/jessa/yangicon.png',
+      color: 'rgb(140, 168, 255)'
+    },
+    // The compass
+    '???': {
+      icon: '/images/jessa/luopanicon.png',
+      color: 'rgb(226, 138, 186)'
+    },
+
+    'Harley': {
+      icon: '/images/jessa/harleyicon.png',
+      color: 'rgb(255, 175, 0)'
+    },
+
+    'unknownA': {
+      icon: null,
+      color: 'rgb(255, 176, 120)'
+    },
+    'unknownB': {
+      icon: null,
+      color: 'rgb(140, 224, 170)'
+    },
+    'Passerby': {
+      icon: null,
+      color: 'rgb(190, 190, 190)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = p.dataset.char || Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    let icon;
+    if (char.icon) {
+      icon = document.createElement('img');
+      icon.src = char.icon;
+      icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:0px;';
+    } else {
+      icon = document.createElement('div');
+      icon.style.cssText = 'width:36px; height:36px; flex-shrink:0;';
+    }
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
