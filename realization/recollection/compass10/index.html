@@ -1,0 +1,174 @@
+<head>
+   <link rel="stylesheet" href="/realization/stylesjessa.css">
+    <title>The Unclashable Blade</title>
+    <link rel="icon" type="image/x-icon" href="/images/jessa/favicon.ico">
+
+</head>
+
+<style>
+  .topnav a.active { background-color: rgb(255, 175, 0);}
+</style>
+
+<body>
+
+<div class="topnav">
+  <a href="/">???</a>
+  <a class="active" href="/realization">???</a>
+  <a href="">???</a>
+
+</div>
+<br>
+
+<div class="readingbox">
+
+<div class="jessabox">
+<p>Yolisa: “Kh..?”</p>
+
+<p>Harley: “You heard me, didn’t you?! The light that it emits, the beautiful, flashing colour it can bring out..! My master promised it to the first person who can murder that traitor.”</p>
+
+<p>Harley: “I’ve been looking, been searching for this compass for so long.. Every district, every corner of the city..! ..I can’t find the compass anywhere, the unique light it emits…”</p>
+
+<p>Harley: “...Has been gone for so long now. There are many lights like it, sure. But none of them have come to the same decision on how to shine their colours. I can’t just find a similar light. I must bask in the light that only the compass can bring..!”</p>
+
+<p>Yang Dingliu: “That isn’t true.”</p>
+
+<p>Yolisa: “Lad, what’re you-”</p>
+</div>
+
+<div class="reviewbox">
+<p>Walking out behind the wall, Yang had his sword gripped incredibly tight, his teeth gritted painfully hard as well. He continued, seething through his teeth.</p>
+</div>
+
+<div class="jessabox">
+<p>Yang Dingliu: “You’ve not looked nearly hard enough for the compass. And if you did. You could’ve "had" the blade much, much sooner.”</p>
+
+<p>Yang Dingliu: “But even if you did find her, Your "master" is still a liar. You won’t take this sword from me, not even if you use all the strength in the world to pry it from my cold, dead hands.”</p>
+
+<p>Harley: “...You little shit..! GIVE IT TO ME! GIVE IT TO ME NOW!! You aren't nearly as deserving of it..! My creations, my wonderful specimens have all been lovingly hand crafted for that sword..! You can’t just- DENY me the right..! I’ve done so much more for her than you could ever wish to do..!”</p>
+
+<p>Yang Dingliu: “It doesn’t matter.”</p>
+
+<p>Yolisa: “Ow’d you even know it was the right sword, anyway?”</p>
+
+<p>Harley: “Fuuuhuhu.. You too? You can’t see the beauty behind that blade?”</p>
+
+<p>Yolisa: “..It’s always look proper normal to me, lass. You’re going mental.”</p>
+
+<p>Yang Dingliu: “Yolisa..-!”</p>
+</div>
+
+<div class="reviewbox">
+<p>She raised her hand to Yang, signalling for him to be quiet. He looked to be getting progressively irritable, there was no telling when he’d decide enough was enough.</p>
+</div>
+
+<div class="jessabox">
+<p>Harley: “The power behind it is so, so much more valuable than its looks. To be a star, almost equal to someone as great as the dizhuang star..! I need it for myself..! Heeehnn.. Neither of you will get in my way of becoming that close to someone so amazing, there's no one who will stop me now, my lust for it is.. It’s far too great..!”</p>
+</div>
+
+<div class="reviewbox">
+<p>Yolisa shot her a visibly concerned look. The very first time Harley could tell what she was thinking.</p>
+</div>
+
+<div class="jessabox">
+<p>Yolisa: “You’re off your rocker you.. Genuinely off your nu–”</p>
+
+<p>Harley: “ENOUGH! Ahem.”</p>
+</div>
+
+<div class="reviewbox">
+<p>Harley seemed to recompose herself, sinking the large, bristly claws back into her wingspan. Her outfit fluttered as if alive, the many flaps rearranging a small amount.</p>
+<p>With another serene smile, she calmed herself again.</p>
+</div>
+
+<div class="jessabox">
+<p>Harley: “..Hand over the blade, and I will consider sparing you and your friend, Inferior Star.”</p>
+
+<p>Yolisa: “Yeah, go–”</p>
+
+<p>Yang Dingliu: “Go fuck yourself.”</p>
+
+<p>Yolisa: “Oooh..?”</p>
+
+<p>Yang Dingliu: “I won’t give you the satisfaction of my blade’s full potential. You don’t deserve it. End of conversation.”</p>
+
+<p>Yolisa: “Yes lad, you tell her..!”</p>
+
+<p>Harley: “...Very well then.”</p>
+</div>
+
+<div class="reviewbox">
+<p>Harley crouched down slightly, leaning forward as if she was getting ready to pounce.</p>
+</div>
+
+<div class="jessabox">
+<p>Harley: “You leave me no choice.”</p>
+</div>
+
+</div>
+
+<div class="textBox">
+<h4>???, ??/??/??</h4>
+</div>
+
+<script>
+  const characters = {
+    'Yolisa': {
+      icon: '/images/jessa/yolisaicon.png',
+      color: 'rgb(176, 148, 232)'
+    },
+    'Yang Dingliu': {
+      icon: '/images/jessa/yangicon.png',
+      color: 'rgb(140, 168, 255)'
+    },
+    // The compass
+    '???': {
+      icon: '/images/jessa/luopanicon.png',
+      color: 'rgb(226, 138, 186)'
+    },
+
+    'Harley': {
+      icon: '/images/jessa/harleyicon.png',
+      color: 'rgb(255, 175, 0)'
+    },
+
+    'unknownA': {
+      icon: null,
+      color: 'rgb(255, 176, 120)'
+    },
+    'unknownB': {
+      icon: null,
+      color: 'rgb(140, 224, 170)'
+    },
+    'Passerby': {
+      icon: null,
+      color: 'rgb(190, 190, 190)'
+    }
+  };
+
+  document.querySelectorAll('.jessabox p').forEach(p => {
+    const name = p.dataset.char || Object.keys(characters).find(n => p.textContent.startsWith(n));
+    const char = characters[name];
+
+    if (!char) return;
+
+    p.style.color = char.color;
+
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; align-items:flex-start; gap:10px;';
+
+    let icon;
+    if (char.icon) {
+      icon = document.createElement('img');
+      icon.src = char.icon;
+      icon.style.cssText = 'width:36px; height:36px; object-fit:contain; flex-shrink:0; margin-top:0px;';
+    } else {
+      icon = document.createElement('div');
+      icon.style.cssText = 'width:36px; height:36px; flex-shrink:0;';
+    }
+
+    p.parentNode.insertBefore(wrapper, p);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(p);
+  });
+</script>
+</body>
