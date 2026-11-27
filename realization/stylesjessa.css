@@ -193,3 +193,31 @@ p {
   font-family: "Courier New", monospace;
   font-size: 25px;
 }
+
+.alert {
+  padding: 20px;
+  background-color: #2600ff;
+  color: white;
+  margin-bottom: 15px;
+  font-family: "Courier New", monospace;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.footer {
+
+}
