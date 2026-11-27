@@ -51,12 +51,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
 $(function () {
+    new Image().src = 'gifs/gif1.gif';
     $('.footer').one('mouseenter', function () {
         var $img = $(this);
-        $img.attr('src', 'gifs/gif1.gif?' + Date.now());
+        $img.attr('src', 'gifs/gif1.gif');
         setTimeout(function () {
-            $img.attr('src', 'gifs/gif1 final.png');
-        }, 2935);
+            $img.attr('src', 'compass1.png');
+        }, 800);
     });
 });
 </script>
